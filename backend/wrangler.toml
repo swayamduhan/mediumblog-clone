@@ -1,0 +1,8 @@
+name = "backend"
+compatibility_date = "2023-12-01"
+
+[vars]
+DATABASE_URL=""
+# this url above will be used as the main db link (connection pool)
+
+JWT_SECRET=""
