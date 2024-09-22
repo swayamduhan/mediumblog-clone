@@ -2,7 +2,7 @@ name = "backend"
 compatibility_date = "2023-12-01"
 
 [vars]
-DATABASE_URL=""
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYzQ1ZTM2NjQtYWE5OC00NjI3LTg1NDUtZjc5ZmJjMzFjMDNmIiwidGVuYW50X2lkIjoiYTc1NDhlMmQ0YWRmMTQ1MWNhZmZhMDhmY2JjMDE1YTE5NGQzNDJjNmQ1NTYzNWEwYTVjN2NlZWUyMjg4MTgxNiIsImludGVybmFsX3NlY3JldCI6ImNjZmY5NDQ1LTY0OTktNGEyZi05Mzg3LWU4ZjIyMzM2MzdkMiJ9.JREOn9jMHmAGKyP9_w6PBl5KQzgKlnEHb4r6I3iBggs"
 # this url above will be used as the main db link (connection pool)
 
-JWT_SECRET=""
+JWT_SECRET="zerohoes"

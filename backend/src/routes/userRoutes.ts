@@ -56,7 +56,7 @@ userRouter.post('/signup', async (c)=>{
             }
         })
         const token = await sign({id : user.id}, secret)
-        return c.json({token})
+        return c.json({token, name : body.name})
     } catch(e) {
         console.log(e)
         c.text("invalid shit happened")
@@ -90,9 +90,10 @@ userRouter.post('/signin', async (c)=>{
     }
 
     if(foundUser.password !== hashedPass){
+        c.status(411)
         return c.text("wrong password")
     }
 
     const token = await sign({id : foundUser.id}, secret)
-    return c.json({token})
+    return c.json({token, name : foundUser.name})
 })
